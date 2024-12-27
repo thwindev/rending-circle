@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\User\source\repos\SDLprojects\SDLprojects\main.cpp(145,44): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\source\repos\SDLprojects\SDLprojects\main.cpp(145,37): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\source\repos\SDLprojects\SDLprojects\main.cpp(145,30): warning C4305: 'argument': truncation from 'double' to 'float'
+  SDLprojects.vcxproj -> C:\Users\User\source\repos\SDLprojects\x64\Debug\SDLprojects.exe
