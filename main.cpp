@@ -1,38 +1,18 @@
 #include <iostream>
 
-class Monster
-{
-private:
-    // std::string m_name;
-protected:
-    std::string m_name;
-public:
-    Monster(){}
-    Monster(std::string name)
-    :m_name(name){}
-    void attack() { std::cout << m_name << " is attacking!\n"; }
-    void move() { std::cout << m_name << " is moving!\n"; }
-};
+#include "Screen.h"
+#include "Points.h"
 
-class Spider : public Monster
+int main(int argc, char* argv[])
 {
-public:
-    Spider(std::string name)
-    {
-        m_name = name;
-    }
-private:
-};
+	Points points(300, 300);
+	Screen screen(points);
 
-int main(void)
-{
-    Monster monster("Goblin");
-    monster.move();
-    monster.attack();
+	while (true)
+	{
+		screen.show();
+		screen.input();
+	}
 
-    Spider spider("spider");
-    spider.move();
-    spider.attack();
-    
-    return 0;
+	return 0;
 }
